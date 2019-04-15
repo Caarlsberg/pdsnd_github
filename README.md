@@ -20,6 +20,9 @@ The Python script ``bikeshare.py`` imports bike share data from csv files, calcu
  * new_york_city.csv
  * washington.csv
 
+### Known bugs
+ * Raw input is not case sensitive
+
 ### Credits
  * Udacity - Introduction to Python Lesson 1-9
  * [Python: get a frequency count based on two columns (variables) in pandas dataframe some row appers](https://stackoverflow.com/questions/33271098/python-get-a-frequency-count-based-on-two-columns-variables-in-pandas-datafra)
