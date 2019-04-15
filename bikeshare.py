@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -21,17 +20,17 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = ''
     while city not in CITY_DATA.keys():
-        city = input('Name of the city to analyze: ')
+        city = input('Name of the city to analyze: ').lower()
 
     # get user input for month (all, january, february, ... , june)
     month = ''
     while month not in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
-        month = input('Name of the month to filter by, or "all" to apply no month filter: ')
+        month = input('Name of the month to filter by, or "all" to apply no month filter: ').lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = ''
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-        day = input('Name of the day of week to filter by, or "all" to apply no day filter: ')
+        day = input('Name of the day of week to filter by, or "all" to apply no day filter: ').lower()
 
     print('-'*40)
     return city, month, day
