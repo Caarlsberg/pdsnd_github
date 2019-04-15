@@ -8,6 +8,12 @@
 The project is about analysis of US bike share data provided by [Motivateco](https://www.motivateco.com/).
 The Python script ``bikeshare.py`` imports bike share data from csv files, calculates various statistic values and prints the results to the console. There is also an interactive option to view the raw data at the end of the analysis.
 
+
+### Used Software
+ * Python 3.7
+ * Atom
+
+
 ### Files used
  * bikeshare.py
  * chicago.csv
